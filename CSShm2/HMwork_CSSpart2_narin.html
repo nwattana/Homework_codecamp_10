@@ -12,37 +12,99 @@
         .inside {width: 10%; height: 10%;}
         .absolute {position: absolute;}
         .relative{ position: relative;}
-        .fixed {position: fixed;}
+        .fixed{position: fixed;}
         .top{top: 0;}
         .left{left: 0;}
         .right{right: 0;}
-        .bottom {bottom: 0;}
-        .center {left: 50%; top:50%;transform: (-50%,-50%);}
-        .red {background-color: red;}
-        .green {background-color: green;}
-        .blue {background-color: blue;}
-        .yellow {background-color: yellow;}
-        .pink {background-color: pink;}
-        .white {background-color: white;}
-
+        .bottom{bottom: 0;}
+        .center{left: 50%; top:50%;transform: (-50%,-50%);}
+        .red{background-color: red;}
+        .green{background-color: green;}
+        .blue{background-color: blue;}
+        .yellow{background-color: yellow;}
+        .pink{background-color: pink;}
+        .white{background-color: white;}
 </style>
 </head>
 <body>
-    <h2>Image Gallery Card</h2>
-    <div class="card">
-        <img src="https://picsum.photos/seed/pfdsum/250" alt="">
-        <div class="container">
-            <h4>Nice picture</h4>
-            <p>A beautiful picture</p>
+    <div class="relative big left white">
+        <div class="absolute red top left small"></div>
+        <div class="absolute green top right small"></div>
+        <div class="absolute blue bottom left small"></div>
+        <div class="absolute yellow bottom right small"></div>
+    </div>
+<!--Half fixed top-->
+<div class="fixed big top">
+    <!--Small blue Green-->
+    <div class="absolute bottom right big">
+        <div class="left absolute  top big">
+            <div class="absolute top right big green">
+                <div class="absolute white left top big"></div>
+                <div class="absolute white left bottom big"></div>    
+            </div>
+        </div>
+        <!-- pink 2/4-->
+        <div class="absolute bottom left big">
+            <div class="absolute bottom left small pink">
+                <div class="absolute white top right big"></div>
+                <div class="absolute white bottom right big"></div>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <img src="https://picsum.photos/seed/tes/250" alt="">
-        <div class="container">
-            <h4>Nice picture</h4>
-            <p>A beautiful picture</p>
+
+    <!--Small Red-->
+    <div class="absolute bottom left big">
+        <div class="absolute top right big">
+            <div class="absolute top left red big">
+                <div class="absolute white right top big"></div>
+                <div class="absolute white right bottom big"></div>
+            </div>
+        </div>
+        <!-- pink 1/4-->
+        <div class="absolute bottom right big">
+            <div class="absolute bottom right small pink">
+                <div class="absolute white top left big"></div>
+                <div class="absolute white bottom left big"></div>
+            </div>
         </div>
     </div>
+</div>
+<!--Half fixed bottom-->
+<div class="fixed big bottom">
     
+    <div class="absolute top right big">
+    <!--Small Yellow-->
+        <div class="absolute bottom left big">
+            <div class="absolute bottom right big yellow">
+                <div class="absolute top white big"></div>
+                <div class="absolute bottom white big"></div>
+            </div>
+        </div>
+        <!-- Pink 4/4-->
+        <div class="absolute top left big">
+            <div class="absolute pink small top left">
+                <div class="absolute white top right big"></div>
+                <div class="absolute white bottom right big"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute top left big">
+    <!--Small Blue-->
+        <div class="absolute bottom right big">
+            <div class="absolute bottom big left blue">
+                <div class="absolute top right big white"></div>
+                <div class="absolute bottom right big white"></div>
+            </div>
+        </div>
+        <!-- pink 3/4   -->
+        <div class="absolute top right big">
+            <div class="absolute pink top right small">
+                <div class="absolute white top left big"></div>
+                <div class="absolute white bottom left big"></div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
