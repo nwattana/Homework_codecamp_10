@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+        @media(max-width:1920px){
+            .logo>div{ font-size: 30px;width:500px;display: inline-block;}
+            .logo>img{margin:-28px;}
+            .login{margin: 0;}
+            .logo{width: 500px;margin-top: -120px;margin-right: 50px;}
+            .content_holder{justify-content: center;}
+            .bot_container{width: 980px;margin: auto;}
+        }
+
+        @media(max-width:1060.1px){ 
+            .logo{font-size: 26px;width:368px;}
+            .logo>div{text-align: left;width:368px;font-size: 26px;}
+            .bot_container{margin: 0 40px;width: auto;}
+        }
+
+
+        @media(max-width:885px){
+            .content_holder{flex-direction: column;justify-content: flex-start;}
+            .big_container{padding-top: 10px;}
+            .logo{align-items: center;margin: 20px 0 0 0;}    
+            .logo>div{text-align: center;width: 400px;}
+        }
+
+/* LOGO */
+        .big_container{height: 100vh;width: 100%;display: flex;justify-content: center;}
+        .content_holder{height: 100vh;width: 1440px;display: flex;align-items: center;}
+        .topbg_color_set{ background-color: #f0f2f5;  }
+        .bottombg_color_set{background-color: #fff;   }
+        .logo >img{ height: 106px;width: 301.062px;margin:-28px;}
+        .logo >div{ display: inline-block;}
+        .logo{display: flex;flex-direction: column;}
+
+/* LOGINBOX */
+            a{
+                text-decoration: none;
+            }
+            .bg{ background-color: #f0f2f5;}
+            .formbg{
+                align-items: center;
+                background-color: #fff;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+                box-sizing: border-box;
+                margin: 40px 0 0;
+                padding: 20px 0 28px;
+                width: 396px;
+                text-align: center;
+                padding-bottom: 24px;
+                padding-top: 10px;
+                display: block;            }
+            input[type=text]{
+                box-sizing: content-box;
+                border-radius: 6px;
+                border: 1px solid rgb(28,30,33);
+                font-size: 19px;
+                padding: 14px 16px;
+                width: 330px;
+                margin: 6px 0;            }
+            input[type=submit]{
+                background-color: #1877f2;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                font-size: 22px;
+                line-height: 48px;
+                padding: 0 16px;
+                width: 332px;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+                white-space: nowrap;
+                box-sizing: content-box;            }
+            input[type=submit]:hover { background-color: #1266d4;            }
+            div.forget{
+                margin-top: 16px;
+                color: #1877f2;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration: none;            }
+            .line{ align-items: center; border-bottom: 1px solid #dadde1; display: flex; margin: 20px 16px; text-align: center;}
+            .create_new_account{
+                text-align: center;
+                padding-top: 6px;            }
+            a.create{
+                background-color: #42b72a;
+                border: none;
+                border-radius: 6px;
+                font-size: 19px;
+                line-height: 48px;
+                padding: 0 16px;
+                font-weight: bold;
+                color: #fff;
+                display: block;
+                height: 48px;
+                width: 123.250px;
+                margin: auto;
+                box-sizing: content-box;            }
+            .page{
+                margin-top:28px;
+                font-size: 16px;
+                font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+                text-align: center;            }
+            .login>.bg{border-radius: 8px;            }
+            .login{display: inline-block;width: 400;height: 600;box-sizing: content-box;}
+
+                        /* ด้านล่าง */
+            .bot_container{margin-top: 20px;}
+            ul.language_bar { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: flex-start; flex-wrap: wrap;  }
+            ul>li{ margin: 5px;}
+            li>a{text-decoration: none;color: #8a8d91;}
+            li>a:hover{ text-decoration: underline;  }
+            div.foot{ height: 30vh;background-color: #fff; }
+            .nav_bot { font-size: 14px; }  
+ 
+
+            
+             /* ด้านล่าง */
+
+
+    </style>
+</head>
+<body>
+    <div class="big_container topbg_color_set">
+        <div class="content_holder topbg_color_set">
+            <div class="logo topbg_color_set">
+                <img class="facebooklogo"src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                <div>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ
+                </div></div>
+            <div class="login">
+                <div class="bg">
+                    <div class="formbg">
+                        <form action="#">
+                            <div class="inputbox">
+                            <input type="text" id="fname" name="firstname" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ"></div>
+                            <div class="inputbox">
+                            <input type="text" id="lname" name="lastname" placeholder="รหัสผ่าน"></div>
+                            <input type="submit" value="เข้าสู่ระบบ">
+                            <div class="forget"><a href="#">ลืมรหัสผ่านใช่หรือไม่</a></div>
+                                <div class="line"><hr></div>
+                            <div class="create_new_account">
+                                    <a class="create" href="#">สร้างบัญชีใหม่</a>
+                            </div>
+                          </form>
+            
+                    </div>
+                    <div class ="page"><a class="page" href="#">สร้างเพจ</a> สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</div>
+                </div></div>
+    </div>
+    </div>
+    <div class="bot_container bottombg_color_set">
+        <div class="foot">
+
+            <div class="nav_bot">
+            <ul class="language_bar">
+                <li><a href="#">English</a></li>
+                <li><a href="#">ภาษาไทย</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">中文(简体)</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Русский</a></li>
+               <li> <a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#">Italiano</a></li>
+            </ul>
+            </div>
+    <hr>
+            <div class="nav_bot">
+                <ul class="language_bar">
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Messenger</a></li>
+                    <li><a href="#">Facebook Lite</a></li>
+                    <li><a href="#">Watch Places</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pay</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Oculus</a></li>
+                    <li><a href="#">Portal</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Local</a></li>
+                    <li><a href="#">Fundraisers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Voting</a></li>
+                    <li><a href="#">Information Centre</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Create ad</a></li>
+                    <li><a href="#">Create Page</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a>    </li>
+                    <li><a href="#">AdChoices</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Activity log</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
