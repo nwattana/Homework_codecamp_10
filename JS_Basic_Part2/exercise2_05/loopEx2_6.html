@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let stop = 0;
+        let attampt = 0;
+        let pass = 0;
+        let num = prompt("Please give Number between 0 - 100");
+        if (isNaN(num)){stop = 1;}
+        while (!stop){
+            let g_num = prompt("Guess a number");
+            if (isNaN(g_num)){continue;}
+            if (g_num > num){
+                alert("เยอะเกิน ลดลงหน่อย");
+            }
+            else if (g_num < num){
+                alert("น้อยเกินไปเพิ่มขึ้นอีก");
+            }
+            else if (g_num == num){
+                alert("ถูกแล้ว ยินดีด้วย");
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>
