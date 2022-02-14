@@ -13,7 +13,6 @@ function draw(n) {
         mystr += '\n';
     }
     for (let i = 1; i < n;i++){
-        if (i == 1){continue;}
         for (let j  = 0; j < col;j++){
             if ((j >= (n - 1 + (n - i)) || (j <= (n - 1 - (n- i))))) {
             mystr += '-';
